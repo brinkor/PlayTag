@@ -1,0 +1,56 @@
+.TH PlayTag "1.00" "May 2018" "GNU coreutils 8.25" "User Commands"
+.SH NAME
+PlayTag \- create or modify m3u playlist
+.SH SYNOPSIS
+.B PlayTag
+[\fI\,OPTION\/\fR]
+.SH DESCRIPTION
+.\" Add any additional description here
+.PP
+Allows you to choose between creating new playlist based on tags, modifing existed playlist or modifing tags of existing mp3 file.
+.PP
+There are no mandatory arguments.
+Whole interaction with script is based on graphical interface called Zenity.
+The only available paremeters are:
+.TP
+\fB\-h\fR
+shows help page
+.TP
+\fB\-v\fR
+shows information about current version and author
+.PP
+It is essential to have mp3info addon installed before using this script.
+You can do this by your own or through the script (there is an option at the very beginning).
+.PP
+First menu gives you three options:
+.PP
+1. Create playlist
+.PP
+2. Modify playlist
+.PP
+3. Modify mp3 tags of a single mp3 file
+.PP
+Depending on your choice there will appeare next window.
+.PP
+For creating a playlist it will be menu which allows you to set parameters to find exactly wanted files to store in your newly created playlist.
+After setting criteria you will be asked for choosing directory to save the playlist and for choosing its name.
+.PP
+For second option you will have to select playlist to edit.
+Then the menu with songs will appear.
+You will be able to delete songs (from paylist) by clicking on them or adding new by choosing right option form the list.
+After all you can save you changes by selecting the 'Zapisz' option.
+.PP
+If you chose third option you will have to select mp3 file to edit.
+In the new menu you need to write only this options that you want to change, the rest will stay untouched.
+.SH AUTHOR
+Written by Michał Hajdasz.
+.SH COPYRIGHT
+Copyright \(co 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH "SEE ALSO"
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+.br
+or available locally via: info \(aq(coreutils) ls invocation\(aq
